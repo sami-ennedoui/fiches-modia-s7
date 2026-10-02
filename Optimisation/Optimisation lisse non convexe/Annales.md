@@ -1,0 +1,23 @@
+Retour : [Optimisation lisse non convexe](Optimisation%20lisse%20non%20convexe.md)
+
+# Annales
+
+TD, chapitre 9, p. 29 à 32 · corrigé, p. 81 à 90
+
+Le chapitre 9 du poly de TD, "Previous Exams", regroupe quatre exercices tirés de trois contrôles continus. Le lien corrigé pointe vers la page où commence la solution.
+
+## Tableau
+
+| Examen | Exercice | Durée | Thèmes | Fiches | Corrigé |
+|---|---|---|---|---|---|
+| CC1 2024-2025 | Ex 9.1 | 45 min | Courbe d'offre : forme standard, non-convexité, existence, qualification, KKT, second ordre | [1.6 - Ensembles convexes et enveloppe convexe](1%20-%20Rappels/1.6%20-%20Ensembles%20convexes%20et%20enveloppe%20convexe.md), [2.3 - Existence en dimension finie](2%20-%20Existence/2.3%20-%20Existence%20en%20dimension%20finie.md), [2.4 - Forme standard, fermeture et coercivité](2%20-%20Existence/2.4%20-%20Forme%20standard%2C%20fermeture%20et%20coercivit%C3%A9.md), [3.2 - Contraintes actives et qualification](3%20-%20Conditions%20du%20premier%20ordre/3.2%20-%20Contraintes%20actives%20et%20qualification.md), [3.3 - Théorème de KKT](3%20-%20Conditions%20du%20premier%20ordre/3.3%20-%20Th%C3%A9or%C3%A8me%20de%20KKT.md), [3.4 - Appliquer le théorème de KKT](3%20-%20Conditions%20du%20premier%20ordre/3.4%20-%20Appliquer%20le%20th%C3%A9or%C3%A8me%20de%20KKT.md), [4.2 - Point KKT et cône critique](4%20-%20Conditions%20du%20second%20ordre/4.2%20-%20Point%20KKT%20et%20c%C3%B4ne%20critique.md), [4.3 - Conditions du second ordre avec contraintes](4%20-%20Conditions%20du%20second%20ordre/4.3%20-%20Conditions%20du%20second%20ordre%20avec%20contraintes.md) | corrigé |
+| CC1 2024-2025 | Ex 9.2 | 45 min | Forme linéaire sous contrainte quadratique : existence, convexité, qualification, KKT, dual | [1.5 - Matrices symétriques](1%20-%20Rappels/1.5%20-%20Matrices%20sym%C3%A9triques.md), [1.8 - Prouver la convexité](1%20-%20Rappels/1.8%20-%20Prouver%20la%20convexit%C3%A9.md), [2.3 - Existence en dimension finie](2%20-%20Existence/2.3%20-%20Existence%20en%20dimension%20finie.md), [3.2 - Contraintes actives et qualification](3%20-%20Conditions%20du%20premier%20ordre/3.2%20-%20Contraintes%20actives%20et%20qualification.md), [3.3 - Théorème de KKT](3%20-%20Conditions%20du%20premier%20ordre/3.3%20-%20Th%C3%A9or%C3%A8me%20de%20KKT.md), [5.3 - Lagrangien, fonction duale et problème dual](5%20-%20Dualit%C3%A9/5.3%20-%20Lagrangien%2C%20fonction%20duale%20et%20probl%C3%A8me%20dual.md), [5.4 - Points selles, KKT et cas convexe](5%20-%20Dualit%C3%A9/5.4%20-%20Points%20selles%2C%20KKT%20et%20cas%20convexe.md) | corrigé |
+| CC2 2024-2025 | Ex 9.3 | 90 min | Coercivité et ensemble borné, qualification sur deux ensembles, KKT et second ordre pour un maximum, dualité | [1.5 - Matrices symétriques](1%20-%20Rappels/1.5%20-%20Matrices%20sym%C3%A9triques.md), [2.4 - Forme standard, fermeture et coercivité](2%20-%20Existence/2.4%20-%20Forme%20standard%2C%20fermeture%20et%20coercivit%C3%A9.md), [3.2 - Contraintes actives et qualification](3%20-%20Conditions%20du%20premier%20ordre/3.2%20-%20Contraintes%20actives%20et%20qualification.md), [3.3 - Théorème de KKT](3%20-%20Conditions%20du%20premier%20ordre/3.3%20-%20Th%C3%A9or%C3%A8me%20de%20KKT.md), [4.3 - Conditions du second ordre avec contraintes](4%20-%20Conditions%20du%20second%20ordre/4.3%20-%20Conditions%20du%20second%20ordre%20avec%20contraintes.md), [4.5 - Recherche de maximiseurs](4%20-%20Conditions%20du%20second%20ordre/4.5%20-%20Recherche%20de%20maximiseurs.md), [5.3 - Lagrangien, fonction duale et problème dual](5%20-%20Dualit%C3%A9/5.3%20-%20Lagrangien%2C%20fonction%20duale%20et%20probl%C3%A8me%20dual.md), [5.4 - Points selles, KKT et cas convexe](5%20-%20Dualit%C3%A9/5.4%20-%20Points%20selles%2C%20KKT%20et%20cas%20convexe.md) | corrigé |
+| CC3 2023-2024 | Ex 9.4 | 90 min | Sous-différentiel, opérateur proximal, indicatrice d'un convexe fermé, gradient implicite | [1.7 - Fonctions convexes](1%20-%20Rappels/1.7%20-%20Fonctions%20convexes.md), [2.2 - Semi-continuité inférieure](2%20-%20Existence/2.2%20-%20Semi-continuit%C3%A9%20inf%C3%A9rieure.md), [6.4 - Algorithme du gradient et convergence](6%20-%20M%C3%A9thodes%20de%20descente%20du%20premier%20ordre/6.4%20-%20Algorithme%20du%20gradient%20et%20convergence.md), poly p. 105 à 136 | corrigé |
+
+## Programme de chaque CC
+
+- Le CC1 couvre les chapitres 1 à 5 du TD : convexité, existence, qualification, KKT, second ordre et dualité. La question 5b de l'exercice 9.1 porte sur le second ordre.
+- Le CC2 couvre les chapitres 2 à 5 : coercivité, qualification, KKT, second ordre et dualité.
+- Le CC3 porte sur la partie convexe non lisse, soit le chapitre 8 du TD et les chapitres 9 et 10 du poly de cours. Aucune fiche de la chaîne ne couvre encore cette partie.
+

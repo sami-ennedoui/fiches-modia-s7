@@ -6,8 +6,8 @@ Les fiches sont écrites en Markdown avec des formules LaTeX. Elles se lisent su
 
 ## Cours
 
-- [Estimation et modèles statistiques](EMS/EMS.md) : rappels de statistique, modèle linéaire, régression linéaire, ANOVA, et un guide de R et ggplot2.
-- [Analyse de données](Analyse%20de%20donn%C3%A9es/AD.md) : ACP, analyse des correspondances, analyse des correspondances multiples.
+- [Estimation et modèles statistiques](EMS/EMS.md) : rappels de statistique, modèle linéaire, régression linéaire, ANOVA, un guide de R et ggplot2, et des protocoles pour choisir et mener un modèle ou un test.
+- [Analyse de données](Analyse%20de%20donn%C3%A9es/AD.md) : ACP, analyse des correspondances, analyse des correspondances multiples, analyse factorielle multiple, et des protocoles pour choisir et mener chaque méthode.
 - [Modélisation et calcul scientifique](Mod%C3%A9lisation%20et%20Calcul%20Scientifique/Mod%C3%A9lisation%20et%20Calcul%20Scientifique.md) : calcul différentiel, EDO, méthodes de Runge-Kutta, équation de Poisson et EDP elliptiques.
 - [Optimisation](Optimisation/Optimisation.md) : convexité, existence, conditions KKT, second ordre, dualité, méthodes de descente.
 - [Droit](Droit/Droit.md) : organisation judiciaire, entreprise individuelle, sociétés.

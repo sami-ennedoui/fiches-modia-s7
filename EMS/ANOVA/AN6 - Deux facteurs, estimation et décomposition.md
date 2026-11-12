@@ -1,4 +1,4 @@
-Retour : [ANOVA](ANOVA.md) · Précédent : [AN5 - Deux facteurs, modèles et contraintes](AN5%20-%20Deux%20facteurs%2C%20mod%C3%A8les%20et%20contraintes.md) · Suivant : [AN7 - Interaction et stratégie de tests](AN7%20-%20Interaction%20et%20strat%C3%A9gie%20de%20tests.md) · Code : [AN - Code R](AN%20-%20Code%20R.md)
+zRetour : [ANOVA](ANOVA.md) · Précédent : [AN5 - Deux facteurs, modèles et contraintes](AN5%20-%20Deux%20facteurs%2C%20mod%C3%A8les%20et%20contraintes.md) · Suivant : [AN7 - Interaction et stratégie de tests](AN7%20-%20Interaction%20et%20strat%C3%A9gie%20de%20tests.md) · Code : [AN - Code R](AN%20-%20Code%20R.md)
 
 # 6. Deux facteurs : estimation et décomposition
 
@@ -13,13 +13,22 @@ $$
 ## Modèle singulier : estimateurs selon la contrainte
 slides p. 45 · slides p. 46
 
-| | orthogonale, type I | défaut R |
-|---|---|---|
-| $\hat{\mu}$ | $Y_{...}$ | $Y_{11.}$ |
-| $\hat{\alpha}_{i}$ | $Y_{i..} - Y_{...}$ | $Y_{i1.} - Y_{11.}$ |
-| $\hat{\beta}_{j}$ | $Y_{.j.} - Y_{...}$ | $Y_{1j.} - Y_{11.}$ |
+|                     | orthogonale, type I                     | défaut R                                |
+| ------------------- | --------------------------------------- | --------------------------------------- |
+| $\hat{\mu}$         | $Y_{...}$                               | $Y_{11.}$                               |
+| $\hat{\alpha}_{i}$  | $Y_{i..} - Y_{...}$                     | $Y_{i1.} - Y_{11.}$                     |
+| $\hat{\beta}_{j}$   | $Y_{.j.} - Y_{...}$                     | $Y_{1j.} - Y_{11.}$                     |
 | $\hat{\gamma}_{ij}$ | $Y_{ij.} - Y_{i..} - Y_{.j.} + Y_{...}$ | $Y_{ij.} - Y_{i1.} - Y_{1j.} + Y_{11.}$ |
+### Démonstration Type I : 
+- on pose d'abord $f(\mu,\alpha,\beta,\gamma) = \sum_{i}^{I}  \sum_{j} ^J \sum_{k}^{n_{ij}} (Y_{ijk} - \mu - \alpha_{i} - \beta_{j}-\gamma_{ij})^{2}$
+- puis on dérive par rappport à chaque variable puis on l'annule pour obtenir les estimateurs.
+### Démonstration Défaut R 
+- $m_{11} = \mu$
+- $\mu + \alpha_{i} = m_{i1}$ (on annule le $\beta$ et le $\gamma$ en prenant $j=1$
+- $\mu + \beta_{j} = m_{1j}$ même principe
+- $\gamma_{ij} = m_{ij}-\mu-\alpha_{i} - \beta_{j} \iff \gamma_{ij} = m_{ij} - m_{i_{1}}-m_{1j}+m_{11}$
 
+---
 La colonne orthogonale compare aux moyennes marginales. La colonne R compare au bloc de référence $(1,1)$. Dans les deux cas $\hat{\mu} + \hat{\alpha}_{i} + \hat{\beta}_{j} + \hat{\gamma}_{ij} = Y_{ij.}$.
 
 ## Exemple R
@@ -61,12 +70,14 @@ $$
 $$
 Sous les contraintes orthogonales, $SSE = SSA + SSB + SSI$ avec
 
-| Somme | Écarts de moyennes | Avec les estimateurs |
-|---|---|---|
-| $SSA$ | $\sum_{i} n_{i+}(Y_{i..} - Y_{...})^{2}$ | $\sum_{i} n_{i+}\hat{\alpha}_{i}^{2}$ |
-| $SSB$ | $\sum_{j} n_{+j}(Y_{.j.} - Y_{...})^{2}$ | $\sum_{j} n_{+j}\hat{\beta}_{j}^{2}$ |
+| Somme | Écarts de moyennes                                             | Avec les estimateurs                     |
+| ----- | -------------------------------------------------------------- | ---------------------------------------- |
+| $SSA$ | $\sum_{i} n_{i+}(Y_{i..} - Y_{...})^{2}$                       | $\sum_{i} n_{i+}\hat{\alpha}_{i}^{2}$    |
+| $SSB$ | $\sum_{j} n_{+j}(Y_{.j.} - Y_{...})^{2}$                       | $\sum_{j} n_{+j}\hat{\beta}_{j}^{2}$     |
 | $SSI$ | $\sum_{i,j} n_{ij}(Y_{ij.} - Y_{i..} - Y_{.j.} + Y_{...})^{2}$ | $\sum_{i,j} n_{ij}\hat{\gamma}_{ij}^{2}$ |
 
 Sur le blé : $SSA = 14.01$, $SSB = 457.58$, $SSI = 3.67$, $SSR = 231.47$. On retrouve $R^{2} = \frac{475.26}{706.73} = 0.6725$.
+
+Au plan orthogonal les paramètres $\hat{\alpha}, \hat{\beta} \text{ et } \hat{\mu}$ sont identiques entre $\mathcal{H}_{1}$ et $\mathcal{H_{0}}$
 
 Hors plan orthogonal, cette décomposition de SSE ne tient plus et `anova()` donne des sommes qui dépendent de l'ordre des facteurs dans la formule.

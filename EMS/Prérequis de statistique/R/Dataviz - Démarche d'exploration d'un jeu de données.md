@@ -1,3 +1,5 @@
+Source : [TP2 - Statistique avec R](https://cmaugis.github.io/Prerequis-TP-4modIA/TP2-Stat.html) · Corrigé : [TP2 - Correction](https://cmaugis.github.io/Prerequis-TP-4modIA/TP2-Stat-Correction.html) · Tutoriel : [Part3 - Statistique avec R](https://cmaugis.github.io/TutorielR-V2025/Part3-StatR.html) · Note d'origine : [TP Prérequis](../TP%20Pr%C3%A9requis.md)
+
 # Dataviz - Démarche d'exploration d'un jeu de données
 
 L'ordre des opérations quand on reçoit un jeu de données inconnu.

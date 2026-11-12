@@ -108,9 +108,12 @@ slides p. 116
 Les points **influents** sont ceux dont le retrait modifierait fortement l'estimation des coefficients.
 
 $$
-DC_{i} = (\hat{\theta} - \hat{\theta}_{(-i)})'\, T'T\, (\hat{\theta} - \hat{\theta}_{(-i)})
+DC_{i} = \frac{(\hat{\theta} - \hat{\theta}_{(-i)})'\, X'X\, (\hat{\theta} - \hat{\theta}_{(-i)})}{k\,\hat{\sigma}^{2}} = \frac{r_{i}^{2}}{k}\,\frac{H_{ii}}{1 - H_{ii}}
 $$
-avec $T$ le vecteur des résidus studentisés et $\hat{\theta}_{(-i)}$ l'estimateur calculé sans la $i$-ème observation.
+avec $\hat{\theta}_{(-i)}$ l'estimateur calculé sans la $i$-ème observation et $r_{i}$ le résidu standardisé.
+
+> [!warning] Erreur de la slide 116
+> La slide écrit $(\hat{\theta} - \hat{\theta}_{(-i)})'\,T'T\,(\hat{\theta} - \hat{\theta}_{(-i)})$ avec $T$ le vecteur des résidus studentisés. Ce n'est pas la distance de Cook : la matrice placée entre les deux écarts doit être $X'X$, et le tout est divisé par $k\hat{\sigma}^{2}$. Les deux formules ci-dessus redonnent `cooks.distance()` de R à $10^{-15}$ près, vérifié sur données simulées.
 
 Là encore on trace le barplot des $DC_{i}$ slides p. 117. Si une distance ressort nettement des autres, le point est considéré comme influent, et il faut chercher à comprendre pourquoi : levier, valeur aberrante, erreur de mesure.
 

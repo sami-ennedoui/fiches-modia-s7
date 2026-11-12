@@ -4,18 +4,18 @@ La note de décision, à lire en premier quand on ne sait pas quoi tracer.
 
 ## Le tableau de décision
 
-| Situation | Graphique | Code minimal |
-| --- | --- | --- |
-| Une qualitative nominale | diagramme en bâtons, ou camembert si deux modalités | `ggplot(Data, aes(x = Type)) + geom_bar()` |
-| Une qualitative ordinale, fréquences cumulées | bâtons des fréquences cumulées | `ggplot(df, aes(x = Qualite, y = valuecumul)) + geom_bar(stat = "identity")` |
-| Une quantitative, forme de la distribution | histogramme en densité, densité lissée | `ggplot(Data, aes(x = Alcool)) + geom_histogram(aes(y = ..density..), bins = 15)` |
-| Une quantitative, résumé et valeurs aberrantes | boxplot | `ggplot(Data, aes(y = Alcool)) + geom_boxplot()` |
-| Une quantitative, répartition exacte | fonction de répartition empirique | `ggplot(Data, aes(Alcool)) + stat_ecdf(geom = "step")` |
-| Deux quantitatives | nuage de points, plus une droite si liaison linéaire | `ggplot(Data, aes(x = Alcool, y = Densite)) + geom_point() + geom_smooth(method = lm, se = FALSE)` |
-| Plusieurs quantitatives, corrélations | matrice des corrélations | `corrplot(cor(Data[,-c(1:2)]), method = "ellipse")` |
-| Plusieurs quantitatives, comparaison des distributions | boxplots en format long | `ggplot(melt(Data[,-c(1,2)]), aes(x = variable, y = value)) + geom_boxplot()` |
-| Une quantitative contre une qualitative | boxplots conditionnels, ou violin | `ggplot(Data, aes(x = Qualite, y = Alcool)) + geom_boxplot()` |
-| Deux qualitatives | table de contingence puis mosaicplot | `mosaicplot(table(Data$Qualite, Data$Type))` |
+| Situation                                              | Graphique                                            | Code minimal                                                                                       |
+| ------------------------------------------------------ | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Une qualitative nominale                               | diagramme en bâtons, ou camembert si deux modalités  | `ggplot(Data, aes(x = Type)) + geom_bar()`                                                         |
+| Une qualitative ordinale, fréquences cumulées          | bâtons des fréquences cumulées                       | `ggplot(df, aes(x = Qualite, y = valuecumul)) + geom_bar(stat = "identity")`                       |
+| Une quantitative, forme de la distribution             | histogramme en densité, densité lissée               | `ggplot(Data, aes(x = Alcool)) + geom_histogram(aes(y = ..density..), bins = 15)`                  |
+| Une quantitative, résumé et valeurs aberrantes         | boxplot                                              | `ggplot(Data, aes(y = Alcool)) + geom_boxplot()`                                                   |
+| Une quantitative, répartition exacte                   | fonction de répartition empirique                    | `ggplot(Data, aes(Alcool)) + stat_ecdf(geom = "step")`                                             |
+| Deux quantitatives                                     | nuage de points, plus une droite si liaison linéaire | `ggplot(Data, aes(x = Alcool, y = Densite)) + geom_point() + geom_smooth(method = lm, se = FALSE)` |
+| Plusieurs quantitatives, corrélations                  | matrice des corrélations                             | `corrplot(cor(Data[,-c(1:2)]), method = "ellipse")`                                                |
+| Plusieurs quantitatives, comparaison des distributions | boxplots en format long                              | `ggplot(melt(Data[,-c(1,2)]), aes(x = variable, y = value)) + geom_boxplot()`                      |
+| Une quantitative contre une qualitative                | boxplots conditionnels, ou violin                    | `ggplot(Data, aes(x = Qualite, y = Alcool)) + geom_boxplot()`                                      |
+| Deux qualitatives                                      | table de contingence puis mosaicplot                 | `mosaicplot(table(Data$Qualite, Data$Type))`                                                       |
 
 ## Erreurs à éviter
 

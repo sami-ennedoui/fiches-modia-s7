@@ -1,6 +1,10 @@
-Source : methodes-factoriels-CA.pdf · methodes-factoriels-PCA.pdf · MCA.pdf · 2526-ExamenMethodesFacto.pdf
+Source : methodes-factoriels-CA.pdf · methodes-factoriels-PCA.pdf · MCA.pdf · MFA.pdf · 2425-ExamenMethodesFacto.pdf · 2526-ExamenMethodesFacto.pdf
 
 # Analyse de données
+
+## Méthodologie : quoi faire avec quelles données
+- [Guide - Choisir une méthode factorielle](M%C3%A9thodes%20factorielles/Guide%20-%20Choisir%20une%20m%C3%A9thode%20factorielle.md) : arbre de décision, pipeline commun, pièges de choix.
+- Protocoles pas à pas : [Protocole - ACP](M%C3%A9thodes%20factorielles/Protocole%20-%20ACP.md) · [Protocole - CA](M%C3%A9thodes%20factorielles/Protocole%20-%20CA.md) · [Protocole - MCA](M%C3%A9thodes%20factorielles/Protocole%20-%20MCA.md) · [Protocole - MFA](M%C3%A9thodes%20factorielles/Protocole%20-%20MFA.md)
 
 ## ACP
 - [TP1 - ACP - fiche de révision](M%C3%A9thodes%20factorielles/ACP/TP1%20-%20ACP%20-%20fiche%20de%20r%C3%A9vision.md)
@@ -47,6 +51,28 @@ Les fiches suivent l'ordre des slides.
 
 - [TP3 - MCA](M%C3%A9thodes%20factorielles/ACM/TP3%20-%20MCA.md) : énoncé du TP sur les races de chiens, questions reliées aux fiches.
 - [Annale 2025 - Partie MCA](M%C3%A9thodes%20factorielles/ACM/Annale%202025%20-%20Partie%20MCA.md) : partie 1 de l'examen 2025, questions reliées aux fiches.
+
+## Analyse factorielle multiple, MFA ou AFM
+Les fiches suivent l'ordre des slides.
+
+| #   | Fiche                                          | Slides          |
+| --- | ---------------------------------------------- | --------------- |
+| 1   | [MFA - Données multi-tableaux et objectifs](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Donn%C3%A9es%20multi-tableaux%20et%20objectifs.md)  | p. 3-6          |
+| 2   | [MFA - Pondération des groupes](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Pond%C3%A9ration%20des%20groupes.md)              | p. 8-10         |
+| 3   | [MFA - ACP globale pondérée](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20ACP%20globale%20pond%C3%A9r%C3%A9e.md)                 | p. 9, 11-15     |
+| 4   | [MFA - Critère Lg et premier axe](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Crit%C3%A8re%20Lg%20et%20premier%20axe.md)            | p. 17           |
+| 5   | [MFA - Graphe des groupes](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Graphe%20des%20groupes.md)                   | p. 18           |
+| 6   | [MFA - Coefficients Lg et RV](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Coefficients%20Lg%20et%20RV.md)                | p. 19-20        |
+| 7   | [MFA - Points partiels](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Points%20partiels.md)                      | p. 22-25        |
+| 8   | [MFA - Rapports d'inertie](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Rapports%20d%27inertie.md)                   | p. 26-27        |
+| 9   | [MFA - Axes partiels](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Axes%20partiels.md)                        | p. 28           |
+| 10  | [MFA - Éléments supplémentaires](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20%C3%89l%C3%A9ments%20suppl%C3%A9mentaires.md)             | p. 30-32        |
+| 11  | [MFA - Contributions et qualité des groupes](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Contributions%20et%20qualit%C3%A9%20des%20groupes.md) | p. 34-35        |
+| 12  | [MFA - Caractérisation des axes](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Caract%C3%A9risation%20des%20axes.md)             | p. 36-37        |
+| 13  | [MFA - Interprétation et méthode](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20Interpr%C3%A9tation%20et%20m%C3%A9thode.md)            | p. 39           |
+| 14  | [MFA - FactoMineR en R](M%C3%A9thodes%20factorielles/AFM/MFA%20-%20FactoMineR%20en%20R.md)                      | code des slides |
+
+- [Annales - Questions MFA](M%C3%A9thodes%20factorielles/AFM/Annales%20-%20Questions%20MFA.md) : questions MFA des examens 2024-2025 et 2025-2026, reliées aux fiches.
 
 ## ACP et CA côte à côte
 |                | ACP                                        | CA                                  |

@@ -52,6 +52,11 @@ Les contraintes, appelées type I dans les slides, sont alors
 $$
 \sum_{i} n_{i+}\alpha_{i} = 0, \qquad \sum_{j} n_{+j}\beta_{j} = 0, \qquad \forall i,\ \sum_{j} n_{ij}\gamma_{ij} = 0, \qquad \forall j,\ \sum_{i} n_{ij}\gamma_{ij} = 0
 $$
+D'où ça vient : 
+
+- On pose les équivalences qui viennent de dire que les vecteurs $V_{\mu} \; V_{\alpha} \: V_{\gamma} \text{ et } V_{\beta}$ sont othogonaux.
+- On aura besoin de note hypothèse sur la relation entre $n_{ij} \; n_{i+} \text{ et } n_{+j}$ pour avoir l'équivalence
+
 Un plan équilibré, $n_{ij} = c$, vérifie la condition.
 
 ## Autres contraintes
@@ -68,5 +73,7 @@ La suite du cours suppose le plan orthogonal.
 slides p. 42
 
 Déterminer les contraintes qui rendent orthogonal le modèle additif $Y_{ijk} = \mu + \alpha_{i} + \beta_{j} + \varepsilon_{ijk}$.
+
+
 > [!note]- Résultat
 > $\sum_{i} n_{i+}\alpha_{i} = 0$ et $\sum_{j} n_{+j}\beta_{j} = 0$. Les colonnes centrées de $A$ et de $B$ sont alors orthogonales si et seulement si $n_{ij} = n_{i+}n_{+j}/n$, la même condition que pour le modèle avec interaction.
